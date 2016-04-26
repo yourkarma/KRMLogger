@@ -1,0 +1,24 @@
+{
+  "name": "KRMLogger",
+  "version": "0.1.0",
+  "summary": "A short description of KRMLogger.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KRMLogger",
+  "license": "MIT",
+  "authors": {
+    "asowers": "andrew.sowers@yourkarma.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KRMLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KRMLogger/Classes/**/*",
+  "resource_bundles": {
+    "KRMLogger": [
+      "KRMLogger/Assets/*.png"
+    ]
+  }
+}

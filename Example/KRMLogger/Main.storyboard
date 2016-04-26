@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gSF-Pz-YDa">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qaH-X2-rH0">
+            <objects>
+                <viewController id="gSF-Pz-YDa" customClass="ViewController" customModule="KRMLogger_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ed-QE-qGe"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Dr-DD-0kt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wNG-53-C2F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-oc-RGI">
+                                <rect key="frame" x="0.0" y="528" width="600" height="72"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.27450980390000002" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="EhV-pt-sDU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Log Entry">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogEntryButton:" destination="gSF-Pz-YDa" eventType="touchUpInside" id="QPj-uv-2ja"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello, Karma. You look nice today." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wmk-OM-qhr">
+                                <rect key="frame" x="16" y="146" width="280" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="TbJ-Mo-8Cd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TbJ-Mo-8Cd"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG LEVEL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROT-6u-c9s">
+                                <rect key="frame" x="256" y="28" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG MESSAGE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFB-cX-DiQ">
+                                <rect key="frame" x="16" y="109" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7uU-Pl-qgF">
+                                <rect key="frame" x="16" y="65" width="568" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="0ye-yf-kkM"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Severe"/>
+                                    <segment title="Error"/>
+                                    <segment title="Warn"/>
+                                    <segment title="Info"/>
+                                    <segment title="Debug"/>
+                                    <segment title="Trace"/>
+                                </segments>
+                                <color key="tintColor" red="0.078431372550000003" green="0.63921568630000003" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vth-aY-CAL">
+                                <rect key="frame" x="548" y="105" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.2666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapClearLog:" destination="gSF-Pz-YDa" eventType="touchUpInside" id="I9W-05-YWg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG RECORD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-lZ-oEN">
+                                <rect key="frame" x="304" y="109" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9UG-hT-8zL">
+                                <rect key="frame" x="304" y="146" width="280" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="kga-E5-Z3i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kga-E5-Z3i"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="top" secondItem="7PK-lZ-oEN" secondAttribute="bottom" constant="16" id="0KA-iX-L5j"/>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="width" secondItem="Wmk-OM-qhr" secondAttribute="width" id="3kX-La-lWf"/>
+                            <constraint firstAttribute="trailing" secondItem="7uU-Pl-qgF" secondAttribute="trailing" constant="16" id="3lL-VR-xC7"/>
+                            <constraint firstItem="7PK-lZ-oEN" firstAttribute="leading" secondItem="9UG-hT-8zL" secondAttribute="leading" id="3yd-z8-7NV"/>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="top" secondItem="Wmk-OM-qhr" secondAttribute="top" id="7Vv-vm-Phz"/>
+                            <constraint firstItem="7uU-Pl-qgF" firstAttribute="leading" secondItem="wNG-53-C2F" secondAttribute="leading" constant="16" id="BCQ-iw-b54"/>
+                            <constraint firstItem="kgU-oc-RGI" firstAttribute="top" secondItem="Wmk-OM-qhr" secondAttribute="bottom" constant="16" id="Ere-K7-QEH"/>
+                            <constraint firstItem="kgU-oc-RGI" firstAttribute="leading" secondItem="wNG-53-C2F" secondAttribute="leading" id="FBy-EM-DjI"/>
+                            <constraint firstItem="Wmk-OM-qhr" firstAttribute="leading" secondItem="wNG-53-C2F" secondAttribute="leading" constant="16" id="IiY-3t-lba"/>
+                            <constraint firstItem="kgU-oc-RGI" firstAttribute="top" secondItem="Wmk-OM-qhr" secondAttribute="bottom" constant="32" id="KMt-GO-I2S"/>
+                            <constraint firstItem="7uU-Pl-qgF" firstAttribute="top" secondItem="ROT-6u-c9s" secondAttribute="bottom" constant="16" id="MbY-UM-ngz"/>
+                            <constraint firstItem="kgU-oc-RGI" firstAttribute="top" secondItem="9UG-hT-8zL" secondAttribute="bottom" constant="16" id="OxZ-VC-arK"/>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="leading" secondItem="Wmk-OM-qhr" secondAttribute="trailing" constant="8" symbolic="YES" id="QlU-Et-8NX"/>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="bottom" secondItem="Wmk-OM-qhr" secondAttribute="bottom" id="eZy-ib-KmZ"/>
+                            <constraint firstItem="ROT-6u-c9s" firstAttribute="top" secondItem="8Ed-QE-qGe" secondAttribute="bottom" constant="8" id="fAs-Dx-vQW"/>
+                            <constraint firstItem="7PK-lZ-oEN" firstAttribute="top" secondItem="7uU-Pl-qgF" secondAttribute="bottom" constant="16" id="gQP-q2-Ej3"/>
+                            <constraint firstItem="LFB-cX-DiQ" firstAttribute="leading" secondItem="wNG-53-C2F" secondAttribute="leading" constant="16" id="gyb-J3-1Qo"/>
+                            <constraint firstAttribute="trailing" secondItem="vth-aY-CAL" secondAttribute="trailing" constant="16" id="hH1-n4-F7n"/>
+                            <constraint firstAttribute="trailing" secondItem="kgU-oc-RGI" secondAttribute="trailing" id="mSe-wI-P4X"/>
+                            <constraint firstItem="9UG-hT-8zL" firstAttribute="trailing" secondItem="7uU-Pl-qgF" secondAttribute="trailing" id="oXf-UJ-VEa"/>
+                            <constraint firstItem="LFB-cX-DiQ" firstAttribute="top" secondItem="7uU-Pl-qgF" secondAttribute="bottom" constant="16" id="pKP-we-NJf"/>
+                            <constraint firstItem="Wmk-OM-qhr" firstAttribute="top" secondItem="LFB-cX-DiQ" secondAttribute="bottom" constant="16" id="qEv-Mr-mQF"/>
+                            <constraint firstItem="6Dr-DD-0kt" firstAttribute="top" secondItem="kgU-oc-RGI" secondAttribute="bottom" id="uYX-7g-maR"/>
+                            <constraint firstItem="vth-aY-CAL" firstAttribute="baseline" secondItem="7PK-lZ-oEN" secondAttribute="baseline" id="xeB-zy-ne2"/>
+                            <constraint firstItem="ROT-6u-c9s" firstAttribute="centerX" secondItem="wNG-53-C2F" secondAttribute="centerX" id="zuU-kD-xY9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KMt-GO-I2S"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9AT-iE-dsh" appends="YES" id="sjg-Y5-eXj"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="logLevel" destination="7uU-Pl-qgF" id="dId-fN-Fkn"/>
+                        <outlet property="logMessageTextView" destination="Wmk-OM-qhr" id="dqV-Sp-Hhi"/>
+                        <outlet property="logRecordTextView" destination="9UG-hT-8zL" id="3UT-hL-wXh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzc-VZ-3kA" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9AT-iE-dsh">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="gSF-Pz-YDa" id="16e-de-cat"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="194" y="249"/>
+        </scene>
+    </scenes>
+</document>

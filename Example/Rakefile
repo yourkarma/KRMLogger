@@ -1,0 +1,13 @@
+def test(path_to_workspace, scheme)
+  sh "set -o pipefail && xcodebuild -scheme #{scheme} -workspace #{path_to_workspace} -destination 'platform=iOS Simulator,name=iPhone 5' -configuration Debug test | xcpretty -c"
+end
+
+task :test do
+  test "Logger.xcworkspace", "Logger-Example"
+end
+
+namespace :test do
+  task :ci => :test
+end
+
+task :default => :test

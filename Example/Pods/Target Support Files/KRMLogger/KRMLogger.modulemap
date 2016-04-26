@@ -1,0 +1,6 @@
+framework module KRMLogger {
+  umbrella header "KRMLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
