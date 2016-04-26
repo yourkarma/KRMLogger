@@ -1,6 +1,5 @@
 # KRMLogger
 
-#[![CI Status](http://img.shields.io/travis/asowers/KRMLogger.svg?style=flat)](https://travis-ci.org/asowers/KRMLogger)
 [![Version](https://img.shields.io/cocoapods/v/KRMLogger.svg?style=flat)](http://cocoapods.org/pods/KRMLogger)
 [![License](https://img.shields.io/cocoapods/l/KRMLogger.svg?style=flat)](http://cocoapods.org/pods/KRMLogger)
 [![Platform](https://img.shields.io/cocoapods/p/KRMLogger.svg?style=flat)](http://cocoapods.org/pods/KRMLogger)
