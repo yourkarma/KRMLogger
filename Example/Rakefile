@@ -3,7 +3,7 @@ def test(path_to_workspace, scheme)
 end
 
 task :test do
-  test "Logger.xcworkspace", "Logger-Example"
+  test "KRMLogger.xcworkspace", "KRMLogger-Example"
 end
 
 namespace :test do
