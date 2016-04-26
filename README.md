@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/KRMLogger.svg?style=flat)](http://cocoapods.org/pods/KRMLogger)
 [![Platform](https://img.shields.io/cocoapods/p/KRMLogger.svg?style=flat)](http://cocoapods.org/pods/KRMLogger)
 
+## Description
+
+KRMLogger is an asynchronous console event logger. KRMLogger supports multiple log sources and log levels. The example project includes an interactive example of using the Logger in your project.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +26,7 @@ pod "KRMLogger"
 
 ## Author
 
-asowers, andrew.sowers@yourkarma.com
+asowers1, asow123@gmail.com
 
 ## License
 
