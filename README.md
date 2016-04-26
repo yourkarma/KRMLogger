@@ -15,7 +15,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Example
 
-```
+```Swift
 import UIKit
 import KRMLogger
 
