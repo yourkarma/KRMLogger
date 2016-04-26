@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "KRMLogger"
   s.version          = "0.1.0"
-  s.summary          = "A short description of KRMLogger."
+  s.summary          = "KRMLogger is an asynchronous console event logger."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+KRMLogger is an asynchronous console event logger. KRMLogger supports multiple log sources and log levels. The example project includes an interactive example of using the Logger in your project.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/KRMLogger"
+  s.homepage         = "https://github.com/yourkarma/KRMLogger"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "asowers" => "andrew.sowers@yourkarma.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/KRMLogger.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "asowers1" => "asow123@gmail.com" }
+  s.source           = { :git => "https://github.com/yourkarma/KRMLogger.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
@@ -34,7 +34,4 @@ Pod::Spec.new do |s|
     'KRMLogger' => ['KRMLogger/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
